@@ -1,28 +1,25 @@
 #Goal
-#Create a program that helps the user make a financially responsible decision about buying a new iPhone
-#and decides whether they can buy the new phone  
-#or not
+#Create a program that asks the user for the current hour
+#and decides whether they can watch another Telia TV episode 
+#or should go to bed
 
 #START
-#ASK the user how much available money do you currently have
+#ASK the user about the current hour
 #STORE the answer/input
-# IF money (input) is less than 1000
-#   DISPLAY "It is still too early to buy a new phone."
-#ELSE IF money(input) is less than 2000 
-#   DISPLAY "You should save a little more."
-#ELSE IF money (input) is less than 3200
-#   DISPLAY "You're almost there."
+# IF hour (input) is less than 21
+#   DISPLAY "Plenty of time. You can go for another episode."
+#ELSE IF hour(input) is 22 
+#   DISPLAY "One more episode is probably fine."
 #ELSE 
-#   DISPLAY "Congratulations for saving enough, you can go buy the new phone."
+#   DISPLAY "Time to go to bed."  
+#END
 
 
-money = int(input("How much available money do you currently have:"))
+hour = int(input("What time it is? Enter the current hour:"))
 
-if money < 1000:
-    print("It is still too early to buy a new phone.")
-elif money < 2000:
-    print("You should save a little more.")
-elif money < 3200:
-    print("You're almost there.")
+if hour < 21:
+    print("Plenty of time. You can go for another episode.")
+elif hour < 22:
+    print("One more episode is probably fine.")
 else:
-    print("Congratulations for saving enough, you can go buy the new phone.")
+    print("Time to go to bed.")
